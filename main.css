@@ -1,0 +1,63 @@
+
+.nav-link {
+    background-color: transparent;
+    /* border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer; */
+ } 
+
+.nav-link:hover {
+    background-color:EBECF1;
+    font-weight:bolder;
+    text-transform: capitalize;
+} 
+
+#news .card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#news .card:hover img 
+{
+/* transform: scale(0.5);  */
+transition: .3s ease-in-out;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#partner .card:hover img 
+{
+transform: scale(1.05); 
+transition: .3s ease-in-out;
+box-shadow: #3480b9;
+}
+
+#ttt_id_navbar {
+position: absolute;
+background-color: white;
+font-family: 'Lexend Exa', sans-serif;
+top: 0px;
+left: 50%;
+transform: translateX(-50%);
+display: inline-block;
+border: 1px solid #EBECF1;
+border-radius:  5px;
+animation: slide-in 1s ease-out;
+}
+
+div.cardshadow {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.cardparnertshadow {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.cardshadow:hover {
+box-shadow: 0 4px 8px 0 rgba(24, 164, 199, 0.747), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
