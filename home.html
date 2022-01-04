@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .nav-link {
+            background-color: transparent;
+            /* border: none;
+          color: white;
+          padding: 16px 32px;
+          text-align: center;
+          font-size: 16px;
+          margin: 4px 2px;
+          opacity: 0.6;
+          transition: 0.3s;
+          display: inline-block;
+          text-decoration: none;
+          cursor: pointer; */
+         } 
+
+        .nav-link:hover {
+            background-color:EBECF1;
+            font-weight:bolder;
+            text-transform: capitalize;
+        } 
+        
+        #news .card{
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #news .card:hover img 
+        {
+        /* transform: scale(0.5);  */
+        transition: .3s ease-in-out;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #partner .card:hover img 
+        {
+        transform: scale(1.05); 
+        transition: .3s ease-in-out;
+        box-shadow: #3480b9;
+        }
+        
+        #ttt_id_navbar {
+  position: absolute;
+  background-color: white;
+  font-family: 'Lexend Exa', sans-serif;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  border: 1px solid #EBECF1;
+  border-radius:  5px;
+  animation: slide-in 1s ease-out;
+}
+
+div.cardshadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.cardparnertshadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.cardshadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(24, 164, 199, 0.747), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid;">
+          
+          <nav  class="navbar sticky-top navbar-light justify-content-center" style="background-color: #00a7e3; box-shadow: tomato;">
+            <ul class="nav justify-content-center">
+               
+              <li class="nav-item h5">
+                <a class="nav-link active" style="color:#00a7e3; font-size:larger; background-color: white; font-weight: bolder; border-radius: 50%;;" aria-current="page" href="home.html">   EES    </a>
+                </li>
+  
+                <li class="nav-item h5">
+                  <a class="nav-link active" style="color:snow;" aria-current="page">   </a>
+                   </li>
+                   <li class="nav-item h5">
+                    <a class="nav-link active" style="color:snow;" aria-current="page">   </a>
+                     </li>
+                     <li class="nav-item h5">
+                      <a class="nav-link active" style="color:snow;" aria-current="page">   </a>
+                       </li>  
+        
+                <li class="nav-item h5">
+                <a class="nav-link active" style="color:snow;" aria-current="page" href="home.html">   Home  </a>
+                </li>
+                <li class="nav-item h5">
+                <a class="nav-link" style="color:white;" aria-current="page" href="#aboutus"> About us </a>
+                </li>
+                <li class="nav-item h5">
+                <a class="nav-link" style="color:white;" aria-current="page" href="/products.html">Products</a>
+                </li>
+                <li class="nav-item h5">
+                <a class="nav-link" style="color:white;" aria-current="page" href="#news">News</a>
+                </li>
+                <li class="nav-item h5">
+                <a class="nav-link" style="color:white;" aria-current="page" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item h5">
+                  <a class="nav-link" style="color:white;" aria-current="page" href="#contact">    </a>
+                </li>
+                <li class="nav-item h5">
+                  <a class="nav-link" style="color:white;" aria-current="page" href="#contact">    </a>
+                </li>
+                <li class="nav-item h5">
+                  <a class="nav-link" style="color:white;" aria-current="page" href="#contact">&#x2706;</a>
+                  </li>
+                  <li class="nav-item h5">
+                    <a class="nav-link" style="color:white;" aria-current="page" href="#contact">&#x2709;</a>
+                    </li>
+                    <li class="nav-item h5">
+                      <a class="nav-link" style="color:white;" aria-current="page" href="#contact">&#x2690;</a>
+                      </li>
+            </ul> 
+        </nav>
+        
+     
+            
+        
+      
+           
+
+       
+        <!-- Cho thay hinh anh -->
+        <div class="row gx-5" style="background-color:#f6f7f9">
+              <div class="carousel-inner" >
+                <div class="carousel-item active">
+                  <img src="/WebESS/Pics/download.jpg" class="d-block" alt="..." width="100%" height="750">
+                  <div class="carousel-caption d-none d-md-block">
+                    <div class="jumbotron" style="background-color: white; width: 400px; height: 550px; margin: -45% 0% 0 60%; border-radius: 3%;" >
+                      <form">
+                        <p style="color: black; font-weight: bold; font-size: 22px;"> Schedule Your Appointment </p>
+                        <p style="color: black;"> We here to help you 24/7 with experts </p>
+                      
+                        <br>
+                        <input class="form-control" type="text" placeholder="Your Name"> 
+                        <br>
+                       
+                        <input class="form-control" type="text" placeholder="Your Email"> 
+                        <br>
+                      
+                        <input class="form-control" type="number" placeholder="Phone Number"> 
+                        <br>
+                      
+                        <textarea class="form-control"  rows="2" placeholder="Your content" ></textarea>
+                      
+                        <br>
+                       <button type="button" class="btn btn-primary">
+                        Submit Now
+                       </button>
+                      </form>   
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+                
+        </div>
+        
+<br>
+        <!-- About us -->
+        <div id="aboutus">
+            <div class="row">
+                <div class="col-sm-2">
+
+                </div>
+                <div class="col-sm-4">
+                    <img src="/WebESS/Pics/DemoAboutus.PNG" width="100%" height="100%" style="margin-top: 0px;">
+                </div>
+                <div class="col-sm-4">
+                    <h1  style="font-family:'Livvic';"> ABOUT US</h1>
+                    <div class="progress" style="height: 8px; width: 200px;">
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 100%; height: 20px;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <h5> <br> Welcome you to EES Co.ltd <br> <br> </h5>
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0" >
+                              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                               <strong> Our Story</strong>
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                              There's this notion that to grow a business, you have to be ruthless.
+                              But we know there's a better way to grow. 
+                              One where what's good for the bottom line is also good for customers. 
+                              We believe businesses can grow with a conscience, and succeed with a soul — and that they can do it with inbound. 
+                              That's why we've created an ecosystem uniting software, education, and community to help businesses grow better every day.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                               <strong> Our Mission </strong>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                              There's this notion that to grow a business, you have to be ruthless.
+                              But we know there's a better way to grow. 
+                              One where what's good for the bottom line is also good for customers. 
+                              We believe businesses can grow with a conscience, and succeed with a soul — and that they can do it with inbound. 
+                              That's why we've created an ecosystem uniting software, education, and community to help businesses grow better every day.
+                                </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <strong> Our Vission </strong>
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                              There's this notion that to grow a business, you have to be ruthless.
+                              But we know there's a better way to grow. 
+                              One where what's good for the bottom line is also good for customers. 
+                              We believe businesses can grow with a conscience, and succeed with a soul — and that they can do it with inbound. 
+                              That's why we've created an ecosystem uniting software, education, and community to help businesses grow better every day.
+                                </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                    
+                </div>
+                <div class="col-sm-2">
+              
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <!-- Products -->
+            <div id ="product" class ="cardparnertshadow" style="background-color:#f6f7f9">
+                <h1 style="text-align: center; font-family: 'Livvic'">
+                   <center> 
+                      <br>
+                      PRODUCTS & SERVICES
+                      <br>
+
+                      <div class="progress" style="width: 450px; height: 8px; text-align: center;">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 100%; height: 20px; text-align: center;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </center>
+                </h1> 
+                <h2>
+                  <p style="text-align: center;">
+                    We Are Offering All Kinds of Automation Solutions Services <br> and Testing for Electrical System
+                  </p>
+                  <br>
+                
+                </h2>
+                <div class="row">
+                    <div class="col-sm-2">
+
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                          <div class="card h-100 cardshadow">
+                            <img src="/WebESS/Pics/Demoproduct.PNG"  width="100px" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col ">
+                          <div class="card h-100 cardshadow" >
+                            <img src="/WebESS/Pics/Demoproduct1.PNG" width="100px"alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100 cardshadow">
+                            <img src="/WebESS/Pics/Demoproduct2.PNG"  width="100px" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      </div>
+                    <div class="col-sm-2">
+
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                <div class="col-sm-2">
+
+                </div>
+                <div class="col-sm-8">
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100 cardshadow">
+                        <img src="/WebESS/Pics/Demoproduct.PNG"  width="100px" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col ">
+                      <div class="card h-100 cardshadow">
+                        <img src="/WebESS/Pics/Demoproduct1.PNG" width="100px"alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 cardshadow">
+                        <img src="/WebESS/Pics/Demoproduct2.PNG"  width="100px" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  </div>
+                <div class="col-sm-2">
+
+                </div>
+                </div>
+                <br>
+                <br>
+
+                <!-- NEWS -->
+              
+                <div id="news" class ="cardparnertshadow" style="background-color:white">
+                    <br>
+                 
+                    <h1 style="font-family:'Livvic';">
+                        <Center>
+                        OUR LATEST NEWS
+                        <br>
+
+                        <div class="progress" style="width: 400px; height: 8px; text-align: center;">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 100%; height: 20px; text-align: center;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+                        </Center>
+                    </h1> 
+                   
+                    <div class="row" style="background-color:white">
+                        <div class="col-sm-2">
+    
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="card mb-3">
+                                <img src="/WebESS/Pics/News/7_12_2021 1.jpg" width="100%" class="card-img-top" alt="..." style="border-radius: 2%;"> 
+                                <div class="card-body">
+                                  <h5 class="card-title" style="text-align: justify;">EVN and TKV have a meeting to agree on a plan to ensure coal supply for power production in 2022</h5>
+                                  <p class="card-text" style="text-align: justify;">
+                                    On 4th December 2021, in Hanoi, Electricity of Vietnam (EVN) organized a meeting with Vietnam Coal and Mineral Industries Group (TKV) 
+                                    on the situation of coal supply for power production in 2021 and prepare a coal supply plan for EVN's thermal power plant in 2022.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago   </small>
+                                      <button type="submit" class="btn btn-primary" style="margin-left: 50%;">
+                                           Read more >>
+                                      </button>
+                                    </p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="card mb-3" style="max-width: 610px;">
+                                <div class="row no-gutters">
+                                  <div class="col-md-4">
+                                    <img src="/WebESS/Pics/News/7_12_2021 1.jpg" class="card-img" alt="..." >
+                                    <p class="card-text">
+                                      <h5 class="card-title" style="text-align:center;">ABB’s smart solutions safeguard power to one of Vietnam’s largest data centers</h5>
+                                    </p>
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <p class="card-text" style="text-align: justify;">
+                                        • ABB technologies will safeguard critical power and ensure uptime for CMC Creative Space a leader in providing cloud computing infrastructure.
+                                        <br>
+                                        • Meeting the ever increasing demand for applications and data services in Vietnam, critical power and digitalization solutions will ensure 24/7 uptime and keep consumers connected.
+                                      </p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago   </small>
+                                        <button type="submit" class="btn btn-primary" style="margin-left: 25%;">
+                                             Read more >>
+                                        </button>
+                                      </p>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3" style="max-width: 610px;">
+                              <div class="row no-gutters">
+                                <div class="col-md-4">
+                                  <img src="/WebESS/Pics/News/home-page-web.jpg" class="card-img" alt="...">
+                                  <p class="card-text">
+                                    <h5 class="card-title" style="text-align:center;">ABB’s smart solutions safeguard power to one of Vietnam’s largest data centers</h5>
+                                  </p>
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <p class="card-text" style="text-align: justify;">
+                                      • ABB technologies will safeguard critical power and ensure uptime for CMC Creative Space a leader in providing cloud computing infrastructure.
+                                      <br>
+                                      • Meeting the ever increasing demand for applications and data services in Vietnam, critical power and digitalization solutions will ensure 24/7 uptime and keep consumers connected.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago   </small>
+                                      <button type="submit" class="btn btn-primary" style="margin-left: 25%;">
+                                           Read more >>
+                                      </button>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+      
+                        </div>
+
+                        <div class="col-sm-1">
+
+                        </div>
+                      
+                    </div>
+             
+
+                  <!-- PARTNER -->
+
+                  <div id = "partner" class ="cardparnertshadow" style="background-color:#f6f7f9;">
+                    <br>
+                 
+                    <h1 style="font-family:'Livvic';">
+                        <Center>
+                       PARTNER
+                       <div class="progress" style="width: 200px; height: 8px; text-align: center;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%; height: 20px; text-align: center;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <br>
+                        </Center>
+                    </h1> 
+                  
+                    <div class="row " style="background-color:#f6f7f9">
+                      <div class="col-sm-2">
+  
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="card card-body">
+                          <img src="/WebESS/Pics/Partner/3M.PNG" class="card-img" width="auto" , height="140" alt="...">
+                        </div>
+                      </div>
+
+                      <div class="col-sm-2">
+                        <div class="card card-body">
+                          <img src="/WebESS/Pics/Partner/Cadivi.PNG" class="card-img" width="auto" , height="140"
+                            alt="...">
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="card card-body">
+                          <img src="/WebESS/Pics/Partner/Canadian.PNG" class="card-img" width="auto" , height="140"
+                            alt="...">
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="card card-body">
+                          <img src="/WebESS/Pics/Partner/Schneider.PNG" class="card-img" width="auto" , height="140"
+                            alt="...">
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+
+                      </div>
+                      </div>
+                      <br>
+                      <br>
+                      <div class="row">
+
+                        <div class="col-sm-2">
+
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="card card-body">
+                            <img src="/WebESS/Pics/Partner/Arteche.jpg" class="card-img" width="auto" , height="140"
+                              alt="...">
+                          </div>
+                        </div>
+
+                        <div class="col-sm-2">
+                          <div class="card card-body">
+                            <img src="/WebESS/Pics/Partner/Hostman.jpg" class="card-img" width="auto" , height="140"
+                              alt="...">
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="card card-body">
+                            <img src="/WebESS/Pics/Partner/TE.jpg" class="card-img" width="auto" , height="140"
+                              alt="...">
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="card card-body">
+                            <img src="/WebESS/Pics/Partner/ESS.jpg" class="card-img" width="auto" , height="140"
+                              alt="...">
+                          </div>
+                          <br>  
+                          <br>
+
+                        </div>
+                        <br>
+                        <div class="col-sm-2"> </div>
+
+                        <div class="row">
+                          <br>
+                          <br>
+                          <p>   </p>
+                          </div>
+                    </div>
+
+
+                   </div>
+                    
+                  </div>
+                 
+                </div>
+                
+                    <!-- CONTACT -->
+                    <div id="contact" class ="cardparnertshadow" style="background-image: url(/WebESS/Pics/Contact/footer-bg.png); background-repeat: no-repeat; background-size: 100% 100%;">
+                    
+                                              
+                        <div class="row">
+                           
+
+                            <div class="col-sm-2">
+        
+                            </div>
+                            <div class="col-sm-4">
+                                <h1 style="font-family:'Livvic';">
+                                <br>
+                                    CONTACT INFO
+                                    
+                                    <br>
+                                    <div class="progress" style="width: 300px; height: 8px; text-align: center;">
+                                      <div class="progress-bar bg-success" role="progressbar" style="width: 100%; height: 20px; text-align: center;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                      </div>
+                                    <br>
+                                </h1>
+                                <h5>
+                                  LET'S TALK
+                                </h5>
+                                <h3>
+                                  SPEAK WITH  EXPERT ENGINEERING
+                                </h3>
+                            
+                                <br>
+                                <p style="font-weight: bold; font-size: 20px;"> &#128222; 0935.280.584 <br> &#128233; info.ees.vn@gmail.com <br> &#127968; Hoa Quy, Ngu Hanh Son, Da Nang</p>
+                                <p style="font-style: italic;"> Have any idea or project for in your mind call us or schedule a appointment. <br>   Our representative will reply you shortly.<p>
+                            </div>
+                            <div class="col-sm-4">
+                                <form>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <div class="form-group">
+                                      <br>
+                                      <br>
+                                      <br>
+                                      <br>
+                                      <h5> GET IN TOUCH </h5>
+                                      <br>
+
+                                      <input class="form-control" type="text" placeholder="Your Name"> 
+                                      <br>
+                                     
+                                      <input class="form-control" type="text" placeholder="Your Email"> 
+                                      <br>
+                                    
+                                      <input class="form-control" type="number" placeholder="Phone Number"> 
+                                      <br>
+                                    
+                                      <textarea class="form-control"  rows="3" placeholder="Your content" ></textarea>
+                                      
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                  </form>
+                                  <br>
+                                  <br>
+                                  <br>
+                            </div>
+                       
+                            <div class="col-sm-2">
+                        </div>
+                    </div>
+
+    </div> 
+
+</body>
+
+</html>

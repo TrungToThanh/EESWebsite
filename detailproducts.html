@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .nav-link {
+            background-color: transparent;
+            /* border: none;
+          color: white;
+          padding: 16px 32px;
+          text-align: center;
+          font-size: 16px;
+          margin: 4px 2px;
+          opacity: 0.6;
+          transition: 0.3s;
+          display: inline-block;
+          text-decoration: none;
+          cursor: pointer; */
+         } 
+
+        .nav-link:hover {
+            background-color:EBECF1;
+            font-weight:bolder;
+            text-transform: capitalize;
+        } 
+        
+        #news .card{
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #news .card:hover img 
+        {
+        /* transform: scale(0.5);  */
+        transition: .3s ease-in-out;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #partner .card:hover img 
+        {
+        transform: scale(1.05); 
+        transition: .3s ease-in-out;
+        box-shadow: #3480b9;
+        }
+        
+        #ttt_id_navbar {
+  position: absolute;
+  background-color: white;
+  font-family: 'Lexend Exa', sans-serif;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  border: 1px solid #EBECF1;
+  border-radius:  5px;
+  animation: slide-in 1s ease-out;
+}
+
+div.cardshadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 50px;
+  text-align: center;
+  margin-top: 5%;
+}
+div.cardshadow p {
+  font-size: larger;
+  font-weight: bolder;
+  padding-top: 5%;
+}
+div.picsshadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.cardparnertshadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.cardshadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(24, 164, 199, 0.747), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vertical-menu {
+  width: 100%;
+}
+
+.vertical-menu a {
+  background-color: white;
+  color: black;
+  display: block;
+  padding: 12px;
+  /* text-decoration: none; */
+  font-weight: bold;
+  font-size: 15px;
+  text-align: left;
+ 
+}
+
+.vertical-menu a:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.vertical-menu a.active {
+  color: black;
+  font-weight:bolder;
+}
+
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid;">
+          <!-- BO CUC TAO THANH NAV -->
+          <nav  class="navbar sticky-top navbar-light justify-content-center" style="background-color: #00a7e3; box-shadow: tomato;">
+            <ul class="nav justify-content-center">
+               
+              <li class="nav-item h5">
+                <a class="nav-link active" style="color:#00a7e3; font-size:larger; background-color: white; font-weight: bolder; border-radius: 50%;;" aria-current="page" href="home.html">   EES    </a>
+                </li>
+  
+                <li class="nav-item h5">
+                  <a class="nav-link active" style="color:snow;" aria-current="page">   </a>
+                   </li>
+                   <li class="nav-item h5">
+                    <a class="nav-link active" style="color:snow;" aria-current="page">   </a>
+                     </li>
+                     <li class="nav-item h5">
+                      <a class="nav-link active" style="color:snow;" aria-current="page">   </a>
+                       </li>  
+        
+                <li class="nav-item h5">
+                <a class="nav-link active" style="color:snow;" aria-current="page" href="home.html">   Home  </a>
+                </li>
+                <li class="nav-item h5">
+                <a class="nav-link" style="color:white;" aria-current="page" href="#aboutus"> About us </a>
+                </li>
+                <li class="nav-item h5">
+                <a class="nav-link" style="color:white;" aria-current="page" href="/products.html">Products</a>
+                </li>
+                <li class="nav-item h5">
+                <a class="nav-link" style="color:white;" aria-current="page" href="#news">News</a>
+                </li>
+                <li class="nav-item h5">
+                <a class="nav-link" style="color:white;" aria-current="page" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item h5">
+                  <a class="nav-link" style="color:white;" aria-current="page" href="#contact">    </a>
+                </li>
+                <li class="nav-item h5">
+                  <a class="nav-link" style="color:white;" aria-current="page" href="#contact">    </a>
+                </li>
+                <li class="nav-item h5">
+                  <a class="nav-link" style="color:white;" aria-current="page" href="#contact">&#x2706;</a>
+                  </li>
+                  <li class="nav-item h5">
+                    <a class="nav-link" style="color:white;" aria-current="page" href="#contact">&#x2709;</a>
+                    </li>
+                    <li class="nav-item h5">
+                      <a class="nav-link" style="color:white;" aria-current="page" href="#contact">&#x2690;</a>
+                      </li>
+            </ul> 
+          </nav>
+
+        <!-- BO CUC TAO SAN PHAM -->
+      <div class = "row">
+        <div class="col-sm-2">
+          
+        </div>
+        <div class="col-sm-2">
+        
+          <div class="cardshadow" style="height: 340px;" >
+            <h4 style=" background-color: #00a7e3; color: white; margin-top: 10px;padding-bottom: 10px; "> CATEGORIES <br> </h4>
+            <div class="vertical-menu">
+              <a href="#">High Voltage Products</a>
+              <a href="#">Medium Voltage Products</a>
+              <a href="#">Aptomat and LV Circuit Breaker</a>
+              <a href="#">Relay and Automation System</a>
+              <a href="#">Conductor and LV Cable</a>
+              <a href="#">Technical Services </a>
+            </div>
+          </div>
+        
+          <div class="cardshadow" style="height: 420px;" >
+            <h4 style="background-color: #17a5c9; color: white; margin-bottom: 10px; padding-bottom: 10px;"> BRANDS</h4>
+            <div class="vertical-menu">
+              <a href="#">ABB </a>
+              <a href="#">General Electric</a>
+              <a href="#">Schneider Electric</a>
+              <a href="#">Toshiba Electric</a>
+              <a href="#">Arteche</a>
+              <a href="#">Dong Anh EEMC</a>
+              <a href="#">LS Electrical</a>
+              <a href="#">Vietpower</a>
+            </div>
+          </div>
+       
+          <div class="cardshadow" style="height: 420px;" >
+            <h4 style="background-color: #17a5c9; color: white; margin-bottom: 10px; padding-bottom: 10px;"> CONTACTS</h4>
+            <div class="vertical-menu">
+              <a href="#">Mr. Nghi - Sale Manager <br> Phone: 0905.929.066 <br> Email: trungees@gmail.com </a>
+              <a href="#">Mr. Nghi - Sale Manager <br> Phone: 0905.929.066 <br> Email: trungees@gmail.com </a>
+              <a href="#">Mr. Nghi - Technical Team <br> Phone: 0905.929.066 <br> Email: trungees@gmail.com </a>
+              <a href="#">Mr. Nghi - Services Team <br> Phone: 0905.929.066 <br> Email: trungees@gmail.com </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <!-- SAN PHAM HOT -->
+
+          <div>
+            <p> </p>
+          </div>
+          <Div>
+            <h2>Tên sản phẩm</h2> 
+          </Div>
+          <div class="row">
+            <div class="col">
+              <div class = "picsshadow">
+                <img src="/WebESS/Pics/Back1.jpg" style="width: 100%; height: 300px;">
+              </div>
+            </div>
+            <div class="col">
+              <h4> Sản phẩm <br> </h4>
+              <p> Mô tả tính năng kỹ thuật của sản phẩm <br>
+                MCB (Miniature Circuit Breaker) – là thiết bị điện thuộc họ CB, 
+                dùng để ngắt mạch khi có sự cố ngắn mạch, 
+                sụt áp…Vì chỉ dùng với Iđm < 100A và Icu < 50KA nên đa số dùng trong dân dụng và tải nhẹ.
+                <br>
+                Tên thường gọi: CB tự động loại nhỏ, aptômat cài, CB tép…(gồm các loại MCB 1P, 2P, 3P, 4P).
+                <br>
+                
+              </p>
+           
+              <button type="button" class="btn btn-primary"> Mua ngay</button>
+            </div>
+          </div>
+          
+          <div class="row"> 
+            <div class="col">
+              <p>
+                <br>
+                <br>
+                Các dòng MCB của ABB 
+                <br>
+                <ol>
+                  Dòng SH200 Compact Home: ứng dụng trong dân dụng, bảo vệ chiếu sáng, ổ cắm trong khu dân cư.
+                  <br>
+                  Dòng S200 New System pro M compact: ứng dụng trong cả dân dụng và công nghiệp.
+                  <br>
+                  Dòng S800 The High Performance: MCB dòng cắt cao lên đến 36kA được ứng dụng trong buildings, 
+                  đường sắt, hàng không, tàu biển, robot, hệ thống giao thông ngầm, 
+                  trạm điện, ngành thép, ngành hóa dầu, năng lượng thay thế,…
+                </ol>
+               
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Technical Specification</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Download Document</a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                   Description of specification 
+                  </div>
+                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    Download Document
+                  </div>
+                </div>
+               
+              </p>
+          </div>
+
+         
+
+        </div>  
+        <div class="col-sm-2">
+        </div>
+        </div>
+        <br>
+        
+    </div>
+    <br>
+ <!-- BO CUC PARTNER -->
+ <div class="row">
+  
+  <div class="col" style="text-align: center;">
+    <div id="partner" class="cardparnertshadow" style="background-color:#f6f7f9">
+      <br>
+
+      <h1 style="font-family:'Livvic';">
+        <Center>
+          PARTNER
+          <div class="progress" style="width: 200px; height: 8px; text-align: center;">
+            <div class="progress-bar bg-success" role="progressbar"
+              style="width: 100%; height: 20px; text-align: center;" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100"></div>
+          </div>
+          <br>
+        </Center>
+      </h1>
+      <div class="row " style="background-color:#f6f7f9">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-2">
+          <div class="card card-body">
+            <img src="/WebESS/Pics/Partner/3M.PNG" class="card-img" width="auto" , height="140" alt="...">
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <div class="card card-body">
+            <img src="/WebESS/Pics/Partner/Cadivi.PNG" class="card-img" width="auto" , height="140"
+              alt="...">
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card card-body">
+            <img src="/WebESS/Pics/Partner/Canadian.PNG" class="card-img" width="auto" , height="140"
+              alt="...">
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="card card-body">
+            <img src="/WebESS/Pics/Partner/Schneider.PNG" class="card-img" width="auto" , height="140"
+              alt="...">
+          </div>
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+
+          <div class="col-sm-2">
+
+          </div>
+          <div class="col-sm-2">
+            <div class="card card-body">
+              <img src="/WebESS/Pics/Partner/Arteche.jpg" class="card-img" width="auto" , height="140"
+                alt="...">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="card card-body">
+              <img src="/WebESS/Pics/Partner/Hostman.jpg" class="card-img" width="auto" , height="140"
+                alt="...">
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card card-body">
+              <img src="/WebESS/Pics/Partner/TE.jpg" class="card-img" width="auto" , height="140"
+                alt="...">
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="card card-body">
+              <img src="/WebESS/Pics/Partner/ESS.jpg" class="card-img" width="auto" , height="140"
+                alt="...">
+            </div>
+            <br>  
+            <br>
+
+          </div>
+          <br>
+          <div class="col-sm-2"> </div>
+
+          <div class="row">
+            <br>
+            <br>
+            <p>   </p>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- BO CU CONTACT -->
+
+<div id="contact" class ="cardparnertshadow" style="background-image: url(/WebESS/Pics/Contact/footer-bg.png); background-repeat: no-repeat; background-size: 100% 100%;">
+                    
+                                              
+  <div class="row">
+     
+
+      <div class="col-sm-2">
+
+      </div>
+      <div class="col-sm-4">
+          <h1 style="font-family:'Livvic';">
+          <br>
+              CONTACT INFO
+              
+              <br>
+              <div class="progress" style="width: 300px; height: 8px; text-align: center;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 100%; height: 20px; text-align: center;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              <br>
+          </h1>
+          <h5>
+            LET'S TALK
+          </h5>
+          <h3>
+            SPEAK WITH  EXPERT ENGINEERING
+          </h3>
+      
+          <br>
+          <p style="font-weight: bold; font-size: 20px;"> &#128222; 0935.280.584 <br> &#128233; info.ees.vn@gmail.com <br> &#127968; Hoa Quy, Ngu Hanh Son, Da Nang</p>
+          <p style="font-style: italic;"> Have any idea or project for in your mind call us or schedule a appointment. <br>   Our representative will reply you shortly.<p>
+      </div>
+      <div class="col-sm-4">
+          <form>
+              <br>
+              <br>
+              <br>
+              <div class="form-group">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h5> GET IN TOUCH </h5>
+                <br>
+
+                <input class="form-control" type="text" placeholder="Your Name"> 
+                <br>
+               
+                <input class="form-control" type="text" placeholder="Your Email"> 
+                <br>
+              
+                <input class="form-control" type="number" placeholder="Phone Number"> 
+                <br>
+              
+                <textarea class="form-control"  rows="3" placeholder="Your content" ></textarea>
+                
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br>
+            <br>
+            <br>
+      </div>
+ 
+      <div class="col-sm-2">
+  </div>
+</div>
+</body>
+
+</html>
